@@ -23,9 +23,11 @@ public class Film {
      * @param rating is the rating of the cinema
      */
     public void Film(String title, Rating rating)
-    {;
+    {
         this.title = title;
         this.rating = rating;
+        
+        print.issue>
     }
     /**
      * toString method to represent of a Film object
