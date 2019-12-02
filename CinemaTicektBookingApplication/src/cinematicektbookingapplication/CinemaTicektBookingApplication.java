@@ -20,7 +20,7 @@ public class CinemaTicektBookingApplication {
     * @return customer object
     */
     private static Customer customerDetailsInput()
-    {
+    {;
         /**
          * Creating a customer object
          */
