@@ -20,6 +20,41 @@ public class CinemaTicektBookingApplication {
     * @return customer object
     */
     private static Customer customerDetailsInput()
+    {
+        /**
+         * Creating a customer object
+         */
+        Customer customer = new Customer();
+        /**
+         * Prompts the user to input name and sets the name of the customer
+         */
+        System.out.println("Please enter your name:");
+        String name = keyboard.nextLine();
+        customer.setName(name);
+        /**
+         * Prompts the user to input age and sets the age of the customer
+         */
+        System.out.println("Please enter your age:");
+        String age = keyboard.nextLine();
+        customer.setAge(Integer.parseInt(age));
+        /**
+         * Prompts the user to input weather student or not and sets the value accordingly 
+         * by checking the users input Y or N
+         */
+        System.out.println("Are you a student?(Y/N)");
+        String isStudentValue = keyboard.nextLine();
+        if(isStudentValue.equals("Y"))
+        {
+            customer.setStudent(true);
+        }
+        else if(isStudentValue.equals("N"))
+        {
+            customer.setStudent(false);
+        }
+        return customer;
+    }
+    
+    private static Customer customerDetailsInput()
     {;
         /**
          * Creating a customer object
@@ -163,6 +198,7 @@ public class CinemaTicektBookingApplication {
         /**
          * If eligible to watch the film displays the details along with cost 
          */
+        print>
         else
         {
             System.out.println("Your ticket is ready to be collected!");
