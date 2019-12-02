@@ -10,7 +10,7 @@ public class CinemaTicektBookingApplication {
      * Ratings[] is an array to store the ratings of the films displayed to customer
      * keyboard variable to scan the customer's inputs
      */
-    private int NUMBER_OF_FILMS = 4;
+    //private int NUMBER_OF_FILMS = 4;
     private static String films[]= {"Ant-Man", "Jurassic World", "Inside Out", "Minions"};
     private static String Ratings[] = {"P", "P", "M", "G"};
     private static Scanner keyboard = new Scanner(System.in);
